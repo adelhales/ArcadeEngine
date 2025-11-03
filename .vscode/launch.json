@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run ArcadeEngine (Debug)",
+      "type": "cppvsdbg", // use "cppdbg" on Mac and Linux
+      // "MIMode": "lldb" on Mac, "gdb" on Linux
+      "request": "launch",
+      "program": "${workspaceFolder}/Build/Debug/ArcadeEngine", // or "Build/ArcadeEngine"
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal", // remove this line on Mac and Linux
+      // "preLaunchTask": "${defaultBuildTask}" // build before running (optional)
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+// Any Global Variables are listed as normal
+// Any Variables which are not global (i.e. are not assigned to widgets automatically) have a comment with a * beside them
+
+// Text
+TextColorDisabled = rgb(155,155,155);
+TextColor = White;
+TextColorHover = White;
+TextColorDown = White; // *
+SelectedTextColor = White;
+SelectedTextColorHover = White;
+
+// Caret
+CaretWidth = 1; // *
+CaretColor = White; // *
+
+// Background
+BackgroundColorDisabled = rgb(20,20,20);
+BackgroundColor = rgb(40,40,40);
+BackgroundColorHover = rgb(65,65,65);
+SelectedBackgroundColor = rgb(85,85,85);
+SelectedBackgroundColorHover = rgb(100,100,100);
+BackgroundColorDown = rgb(115,115,115); // *
+BackgroundColorDownHover = rgb(125,125,125); // *
+
+// Boarders
+Borders = (1);
+BorderColorDisabled = rgb(55,55,55); // *
+BorderColor = rgb(75,75,75);
+BorderColorHover = rgb(100,100,100); // *
+BorderColorFocused = rgb(120,120,120); // *
+BorderColorDown = rgb(135,135,135); // *
+
+// Scrollbar
+ScrollbarWidth = 16;
+// Also used on other widgets
+TrackColor = rgb(25,25,25); // *
+TrackColorHover =  rgb(45,45,45); // *
+SelectedTrackColor = rgb(65,65,65); // *
+// Thumb - Also used on other widgets (slider, range slider, ect.)
+ThumbColor = rgb(50,50,50); // *
+ThumbColorHover = rgb(55,55,55); // *
+
+// Arrow
+ArrowColorDisabled = rgb(105,105,105);
+ArrowColor = White;
+ArrowColorHover = White;
+ArrowBackgroundColorDisabled = rgb(10,10,10);
+ArrowBackgroundColor = rgb(25,25,25);
+ArrowBackgroundColorHover = rgb(50,50,50);
+
+// Separator
+SeparatorColor = rgb(75,75,75); // *
+SeparatorThickness = 1; // *
+SeparatorVerticalPadding = 1; // *
+
+// Title Bar
+TitleBarColor = rgb(15,15,15); // *
+TitleColor = White; // *
+
+// Miscellaneous
+HeaderBackgroundColor = rgb(25,25,25); // *
+Padding = 3; // *
+PaddingBetweenButtons = 1; // *
+ButtonDistanceFromSide = 3; // *
+RoundedBorderRadius = 6; // *
+
+Button
+{
+    BackgroundColor = &BackgroundColor;
+    BackgroundColorDisabled = &BackgroundColorDisabled;
+    BackgroundColorDown = &BackgroundColorDown;
+    BackgroundColorDownHover = &BackgroundColorDownHover;
+    BackgroundColorHover = &BackgroundColorHover;
+    Borders = &Borders;
+    BorderColorDisabled = &BorderColorDisabled;
+    BorderColor = &BorderColor;
+    BorderColorDown = &BorderColorDown;
+    BorderColorFocused = &BorderColorFocused;
+    BorderColorHover = &BorderColorHover;
+    TextColor = &TextColor;
+    TextColorDown = &TextColorDown;
+    RoundedBorderRadius = &RoundedBorderRadius;
+}
+
+Panel
+{
+    RoundedBorderRadius = &RoundedBorderRadius;
+    Padding = &Padding;
+}
+
+ChatBox
+{
+    Padding = &Padding;
+}
+
+ComboBox
+{
+    Padding = &Padding;
+}
+
+CheckBox
+{
+    BackgroundColor = &BackgroundColor;
+    BackgroundColorDisabled = &BackgroundColorDisabled;
+    BackgroundColorHover = &BackgroundColorHover;
+    Borders = &Borders;
+    BorderColorDisabled = &BorderColorDisabled;
+    BorderColor = &BorderColor;
+    BorderColorFocused = &BorderColorFocused;
+    BorderColorHover = &BorderColorHover;
+    TextColor = &TextColor;
+}
+
+EditBox
+{
+    Padding = &Padding;
+    CaretWidth = &CaretWidth;
+    CaretColor = &CaretColor;
+    DefaultTextColor = &TextColorDisabled;
+}
+
+ListBox
+{
+    Padding = &Padding;
+}
+
+ListView
+{
+    Padding = &Padding;
+    SeparatorColor = &SeparatorColor;
+    HeaderTextColor = &TextColor;
+    HeaderBackgroundColor = &HeaderBackgroundColor;
+}
+
+MenuBar
+{
+    SeparatorColor = &SeparatorColor;
+    SeparatorThickness = &SeparatorThickness;
+    SeparatorVerticalPadding = &SeparatorVerticalPadding;
+}
+
+MessageBox
+{
+    TitleColor = &TitleColor;
+    TitleBarColor = &TitleBarColor;
+    PaddingBetweenButtons = &PaddingBetweenButtons;
+    DistanceToSide = &ButtonDistanceFromSide;
+}
+
+RadioButton
+{
+    CheckColor = &TextColor;
+    CheckColorHover = &TextColorHover;
+    CheckColorDisabled = &TextColorDisabled;
+    TextDistanceRatio = 0.2;
+}
+
+RangeSlider
+{
+    SelectedTrackColor = &SelectedTrackColor;
+    TrackColorHover = &TrackColorHover;
+    ThumbColor = &ThumbColor;
+    ThumbColorHover = &ThumbColorHover;
+}
+
+Scrollbar
+{
+    TrackColor = &TrackColor;
+    ThumbColor = &ThumbColor;
+    ThumbColorHover = &ThumbColorHover;
+}
+
+SeparatorLine
+{
+    Color = &SeparatorColor;
+}
+
+Slider
+{
+    TrackColorHover = &TrackColorHover;
+    ThumbColor = &ThumbColor;
+    ThumbColorHover = &ThumbColorHover;
+}
+
+TextArea
+{
+    Padding = &Padding;
+    CaretWidth = &CaretWidth;
+    CaretColor = &CaretColor;
+    DefaultTextColor = &TextColorDisabled;
+}
+
+ToggleButton
+{
+    BorderColorHover = &BorderColorHover;
+    BorderColorDown = &BorderColorDown;
+    BorderColorFocused = &BorderColorFocused;
+    BorderColorDisabled = &BorderColorDisabled;
+    BackgroundColorDown = &BackgroundColorDown;
+    BackgroundColorDownHover = &BackgroundColorDownHover;
+    RoundedBorderRadius = 3;
+}
+
+ChildWindow
+{
+    ShowTextOnTitleButtons = true;
+    DistanceToSide = &ButtonDistanceFromSide;
+    PaddingBetweenButtons = &PaddingBetweenButtons;
+    TitleColor = &TitleColor;
+    TitleBarColor = &TitleBarColor;
+
+    CloseButton = &Button;
+    MinimizeButton = &Button;
+    MaximizeButton = &Button;
+}
